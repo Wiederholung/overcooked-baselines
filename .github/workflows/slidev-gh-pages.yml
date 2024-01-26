@@ -31,7 +31,8 @@ jobs:
       - name: Build SPA
         run: |
           cd slidev/
-          npm run build --base=/${{ github.repository }}/
+          echo "REPO_NAME=$(echo ${{ github.repository }} | cut -d'/' -f2)" >> $GITHUB_ENV
+          npm run build --base=/$REPO_NAME/
       - name: Fix permissions
         run: |
           chmod -c -R +rX "slidev/dist/" | while read line; do
