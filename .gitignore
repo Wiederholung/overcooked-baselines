@@ -1,0 +1,6 @@
+models/*
+downloads/*
+data/*
+
+.idea
+.vscode
