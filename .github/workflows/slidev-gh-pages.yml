@@ -17,6 +17,15 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: github-pages
+    env:
+      SLIDEV_PATH: ${{ vars.SLIDEV_PATH }}
+      SLIDES_NAME: ${{ vars.SLIDES_NAME }}
+      SPA_OUTPUT_DIR: _site
+    # Set the working directory for `run` steps
+    defaults:
+      run:
+        working-directory: ${{ env.SLIDEV_PATH }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -25,24 +34,20 @@ jobs:
         with:
           node-version: "20"
       - name: Install Slidev
-        run: |
-          cd slidev/
-          npm install
+        run: npm install
       - name: Build SPA
         run: |
-          cd slidev/
           REPO_NAME=$(echo ${{ github.repository }} | cut -d'/' -f2)
-          npx slidev build slides.md --base /$REPO_NAME/ --out _site --download
+          npx slidev build ${{ env.SLIDES_NAME }} --base /$REPO_NAME/ --out ${{ env.SPA_OUTPUT_DIR }} --download true
       - name: Fix permissions
         run: |
-          cd slidev/
-          chmod -c -R +rX "_site/" | while read line; do
+          chmod -c -R +rX ${{ env.SPA_OUTPUT_DIR }} | while read line; do
             echo "::warning title=Invalid file permissions automatically fixed::$line"
           done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: slidev/_site/
+          path: ${{ env.SLIDEV_PATH }}/${{ env.SPA_OUTPUT_DIR }}/
 
   deploy:
     # Add a dependency to the build job
@@ -50,8 +55,8 @@ jobs:
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
 
     # Deploy to the github-pages environment
     environment:
