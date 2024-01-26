@@ -8,5 +8,8 @@
     "@slidev/theme-default": "^0.21.2",
     "@slidev/theme-seriph": "^0.21.3",
     "slidev-theme-academic": "^1.1.4"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.41.1"
   }
 }
