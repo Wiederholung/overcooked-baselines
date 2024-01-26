@@ -33,7 +33,7 @@ jobs:
           cd slidev/
           echo "REPO_NAME=$(echo ${{ github.repository }} | cut -d'/' -f2)" >> $GITHUB_ENV
           # npx slidev build --base /$REPO_NAME/
-          npx slidev build --base /Overcooked-AI/
+          npx slidev build --base /Overcooked-Baselines/
       - name: Fix permissions
         run: |
           chmod -c -R +rX "slidev/dist/" | while read line; do
