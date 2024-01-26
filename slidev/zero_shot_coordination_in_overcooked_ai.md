@@ -7,6 +7,7 @@ coverAuthorUrl: https://yitong-hu.metattri.com
 coverBackgroundUrl: https://lsky.metattri.com/i/2024/01/19/65aa2a5e7ddab.gif
 coverBackgroundSource: Overcooked-AI
 coverBackgroundSourceUrl: https://github.com/HumanCompatibleAI/overcooked_ai
+download: https://wiederholung.github.io/zero_shot_coordination_in_overcooked_ai
 hideInToc: true
 fonts:
   local: Montserrat, Roboto Mono, Roboto Slab # local fonts are used for legal reasons for deployment to https://slidev-theme-academic.alexeble.de and only set up for the example project, remove this line for your project to automatically have fonts imported from Google
@@ -33,7 +34,6 @@ info: |
       <a href="https://www.alexeble.de/datenschutz/" target="_blank">Privacy policy of this website</a>
     </li>
   </ul>
-download: true
 ---
 
 # Zero-Shot Coordination in Overcooked-AI
