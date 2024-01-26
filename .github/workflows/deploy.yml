@@ -9,11 +9,11 @@ jobs:
         with:
           node-version: '14'
       - name: Install dependencies
-        run: 
+        run: |
             cd slidev
             npm install
       - name: Build
-        run: 
+        run: |
             cd slidev
             npm run build
       - name: Deploy pages
