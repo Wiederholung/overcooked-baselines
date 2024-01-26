@@ -7,7 +7,7 @@ coverAuthorUrl: https://yitong-hu.metattri.com
 coverBackgroundUrl: https://lsky.metattri.com/i/2024/01/19/65aa2a5e7ddab.gif
 coverBackgroundSource: Overcooked-AI
 coverBackgroundSourceUrl: https://github.com/HumanCompatibleAI/overcooked_ai
-download: https://wiederholung.github.io/zero_shot_coordination_in_overcooked_ai
+download: https://wiederholung.github.io/slidev/zero_shot_coordination_in_overcooked_ai
 export:
   format: pdf
   timeout: 30000
@@ -410,12 +410,9 @@ TBD
 Policy Ensemble Context-Aware zero-shot human-AI coordinatioN
 
 <!-- ### Method -->
----
-layout: figure
-figureUrl: https://lsky.metattri.com/i/2024/01/22/65ad721756cbf.png
----
+<!-- ---layout: figurefigureUrl: https://lsky.metattri.com/i/2024/01/22/65ad721756cbf.png--- -->
 
-<!-- ![image-20240122033547773](https://lsky.metattri.com/i/2024/01/22/65ad721756cbf.png) -->
+![image-20240122033547773](https://lsky.metattri.com/i/2024/01/22/65ad721756cbf.png)
 
 [^louPECANLeveragingPolicy2023]: Lou, X., Guo, J., Zhang, J., Wang, J., Huang, K., & Du, Y. (2023). PECAN: Leveraging Policy Ensemble for Context-Aware Zero-Shot Human-AI Coordination. Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems, 679–688.
 
@@ -435,12 +432,9 @@ figureUrl: https://lsky.metattri.com/i/2024/01/22/65ad721756cbf.png
 
 #### AI-H$_{Proxy}$ Play
 
----
-layout: figure
-figureUrl: https://lsky.metattri.com/i/2024/01/22/65ae8b17798cb.png
----
+<!-- ---layout: figurefigureUrl: https://lsky.metattri.com/i/2024/01/22/65ae8b17798cb.png--- -->
 
-<!-- ![image-20240122233445010](https://lsky.metattri.com/i/2024/01/22/65ae8b17798cb.png) -->
+![image-20240122233445010](https://lsky.metattri.com/i/2024/01/22/65ae8b17798cb.png)
 
 ---
 layout: figure
