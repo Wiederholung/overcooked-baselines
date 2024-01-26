@@ -33,6 +33,7 @@ info: |
       <a href="https://www.alexeble.de/datenschutz/" target="_blank">Privacy policy of this website</a>
     </li>
   </ul>
+download: true
 ---
 
 # Zero-Shot Coordination in Overcooked-AI

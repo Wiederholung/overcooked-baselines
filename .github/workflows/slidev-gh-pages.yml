@@ -31,18 +31,18 @@ jobs:
       - name: Build SPA
         run: |
           cd slidev/
-          echo "REPO_NAME=$(echo ${{ github.repository }} | cut -d'/' -f2)" >> $GITHUB_ENV
-          # npx slidev build --base /$REPO_NAME/
-          npx slidev build --base /Overcooked-Baselines/
+          REPO_NAME=$(echo ${{ github.repository }} | cut -d'/' -f2)
+          npx slidev build slides.md --base /$REPO_NAME/ --out _site --download
       - name: Fix permissions
         run: |
-          chmod -c -R +rX "slidev/dist/" | while read line; do
+          cd slidev/
+          chmod -c -R +rX "_site/" | while read line; do
             echo "::warning title=Invalid file permissions automatically fixed::$line"
           done
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: slidev/dist/
+          path: slidev/_site/
 
   deploy:
     # Add a dependency to the build job
