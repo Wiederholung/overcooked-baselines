@@ -13,7 +13,8 @@ on:
 
 # Default values for the inputs to this workflow
 env:
-  SLIDEV_PATH: ${{ vars.SLIDEV_PATH }}
+  SLIDEV_PATH: slidev
+  SLIDE_PATH: pub/slide
 
 jobs:
   upload:
@@ -41,6 +42,7 @@ jobs:
         run: |
           cd homepage
           git config user.name ${{ github.repository }}
+          git config user.email ${{ github.repository.owner }}@outlook.com
           git add .
           git commit -m "Update slide"
           git push
