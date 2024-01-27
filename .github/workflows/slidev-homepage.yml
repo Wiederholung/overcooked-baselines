@@ -43,6 +43,10 @@ jobs:
           cd homepage
           git config user.name ${{ github.repository }}
           git config user.email ${{ github.repository.owner }}@outlook.com
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes to commit"
+            exit 0
+          fi
           git add .
           git commit -m "Update slide"
           git push
