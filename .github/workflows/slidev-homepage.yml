@@ -16,12 +16,10 @@ env:
   SLIDEV_PATH: ${{ vars.SLIDEV_PATH }}
 
 jobs:
-  build:
+  upload:
     runs-on: ubuntu-latest
     environment: homepage
     env:
-      HOMEPAGE_REPO: ${{ vars.HOMEPAGE_REPO }}
-      GH_PAT: ${{ secrets.GH_PAT }}
       SLIDE_PATH: ${{ vars.SLIDE_PATH }}
     steps:
       - name: Clone local repository
@@ -32,8 +30,8 @@ jobs:
       - name: Clone target repository
         uses: actions/checkout@v4
         with:
-          repository: $HOMEPAGE_REPO
-          token: $GH_PAT
+          repository: ${{ vars.HOMEPAGE_REPO }}
+          token: ${{ secrets.GH_PAT }}
           path: homepage
 
       - name: Copy exported slidev to target repository
