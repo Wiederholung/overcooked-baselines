@@ -1,0 +1,47 @@
+name: Upload Exported Slidev to HomePage
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+    paths:
+      - "$SLIDEV_PATH/**.pdf"
+      - ".github/workflows/slidev-homepage.yml"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Default values for the inputs to this workflow
+env:
+  SLIDEV_PATH: ${{ vars.SLIDEV_PATH }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone local repository
+        uses: actions/checkout@v4
+        with:
+          path: slidev
+
+      - name: Clone target repository
+        uses: actions/checkout@v4
+        environment: homepage
+        env:
+          SLIDE_PATH:: ${{ vars.SLIDE_PATH }}
+        with:
+          repository: ${{ vars.HOMEPAGE_REPO }}
+          token: ${{ secrets.GH_PAT }}
+          path: homepage
+
+      - name: Copy exported slidev to target repository
+        run: cp slidev/$SLIDEV_PATH/*.pdf homepage/$SLIDE_PATH
+
+      - name: Commit and push changes
+        run: |
+          cd homepage
+          git config user.name ${{ github.repository }}
+          git add .
+          git commit -m "Update slide"
+          git push
+          

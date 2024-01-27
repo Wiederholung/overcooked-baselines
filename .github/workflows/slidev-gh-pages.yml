@@ -13,7 +13,7 @@ on:
 
 # Default values for the inputs to this workflow
 env:
-  SLIDEV_PATH: slidev
+  SLIDEV_PATH: ${{ vars.SLIDEV_PATH }}
   SLIDES_NAME: slides.md
   ENABLE_DOWNLOAD: fasle
 
@@ -26,9 +26,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: github-pages
+    environment: slidev
     env:
-      SLIDEV_PATH: ${{ vars.SLIDEV_PATH }}
       SLIDES_NAME: ${{ vars.SLIDES_NAME }}
       ENABLE_DOWNLOAD: ${{ vars.ENABLE_DOWNLOAD }}
       SPA_OUTPUT_DIR: _site
