@@ -5,7 +5,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - "$SLIDEV_PATH/**"
+      - "slidev/**"
       - ".github/workflows/slidev-gh-pages.yml"
 
   # Allows you to run this workflow manually from the Actions tab
@@ -13,7 +13,7 @@ on:
 
 # Default values for the inputs to this workflow
 env:
-  SLIDEV_PATH: ${{ vars.SLIDEV_PATH }}
+  SLIDEV_PATH: slidev
   SLIDES_NAME: slides.md
   ENABLE_DOWNLOAD: fasle
 
