@@ -7,7 +7,7 @@ coverAuthorUrl: https://yitong-hu.metattri.com
 coverBackgroundUrl: https://lsky.metattri.com/i/2024/01/19/65aa2a5e7ddab.gif
 coverBackgroundSource: Overcooked-AI
 coverBackgroundSourceUrl: https://github.com/HumanCompatibleAI/overcooked_ai
-download: https://wiederholung.github.io/pub/slide/zero_shot_coordination_in_overcooked_ai.pdf
+download: https://wiederholung.github.io/pub/slide/zero_shot_coordination_in_overcooked_ai-export.pdf
 export:
   format: pdf
   timeout: 30000
