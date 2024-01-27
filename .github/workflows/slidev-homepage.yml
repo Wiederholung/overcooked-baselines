@@ -18,6 +18,7 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: homepage
     steps:
       - name: Clone local repository
         uses: actions/checkout@v4
@@ -26,7 +27,6 @@ jobs:
 
       - name: Clone target repository
         uses: actions/checkout@v4
-        environment: homepage
         env:
           SLIDE_PATH:: ${{ vars.SLIDE_PATH }}
         with:
