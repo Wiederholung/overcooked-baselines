@@ -4,9 +4,18 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+    paths:
+      - "${{ env.SLIDEV_PATH }}/**"
+      - ".github/workflows/**"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+# Default values for the inputs to this workflow
+env:
+  SLIDEV_PATH: slidev
+  SLIDES_NAME: slides.md
+  ENABLE_DOWNLOAD: fasle
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
