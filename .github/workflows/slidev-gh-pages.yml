@@ -30,7 +30,7 @@ jobs:
     env:
       SLIDES_NAME: ${{ vars.SLIDES_NAME }}
       ENABLE_DOWNLOAD: ${{ vars.ENABLE_DOWNLOAD }}
-      SPA_OUTPUT_DIR: dist
+      SPA_OUTPUT_DIR: _site
     # Set the working directory for `run` steps
     defaults:
       run:
@@ -50,7 +50,7 @@ jobs:
       - name: Build SPA
         run: |
           REPO_NAME=$(echo ${{ github.repository }} | cut -d'/' -f2)
-          npx slidev build ${{ env.SLIDES_NAME }} --base /$REPO_NAME/ --out ${{ env.SPA_OUTPUT_DIR }} --download ${{ env.ENABLE_DOWNLOAD }}
+          npx slidev build ${{ env.SLIDES_NAME }} --base /$REPO_NAME/ --out ${{ env.SPA_OUTPUT_DIR }}/ --download ${{ env.ENABLE_DOWNLOAD }}
 
       - name: Fix permissions
         run: |
