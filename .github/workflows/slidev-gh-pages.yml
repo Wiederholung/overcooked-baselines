@@ -30,7 +30,7 @@ jobs:
     env:
       SLIDES_NAME: ${{ vars.SLIDES_NAME }}
       ENABLE_DOWNLOAD: ${{ vars.ENABLE_DOWNLOAD }}
-      SPA_OUTPUT_DIR: _site
+      SPA_OUTPUT_DIR: dist
     # Set the working directory for `run` steps
     defaults:
       run:
