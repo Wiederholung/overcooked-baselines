@@ -2,7 +2,7 @@
 theme: academic
 layout: cover
 class: text-white
-coverDate: 2024/01/25
+coverDate: 2024/02/04
 coverAuthor: 胡逸同
 coverAuthorUrl: https://yitong-hu.metattri.com
 coverBackgroundUrl: https://lsky.metattri.com/i/2024/01/19/65aa2a5e7ddab.gif
@@ -451,4 +451,4 @@ hideInToc: true
 
 # Thank you!
 
-> [胡逸同](https://yitong-hu.metattri.com), 2024/01/25
+> [胡逸同](https://yitong-hu.metattri.com), 2024/02/04
