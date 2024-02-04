@@ -150,7 +150,7 @@ A multi-agent MDP is defined by a tuple $\langle S, \alpha, \{A_{i \in \alpha}\}
 
 **今后的有关 MARL 的工作可以考虑使用 Melting Pot 作为 simulater。**
 
-[^MeltingPot2023]: Agapiou, J. P., Vezhnevets, A. S., Duéñez-Guzmán, E. A., Matyas, J., Mao, Y., Sunehag, P., Köster, R., Madhushani, U., Kopparapu, K., Comanescu, R., Strouse, D. J., Johanson, M. B., Singh, S., Haas, J., Mordatch, I., Mobbs, D., & Leibo, J. Z. (2023). Melting Pot 2.0 (arXiv:2211.13746). arXiv. https://doi.org/10.48550/arXiv.2211.13746
+[^MeltingPot2023]: Agapiou, J. P., Vezhnevets, A. S., Duéñez-Guzmán, E. A., Matyas, J., Mao, Y., Sunehag, P., Köster, R., Madhushani, U., Kopparapu, K., Comanescu, R., Strouse, D. J., Johanson, M. B., Singh, S., Haas, J., Mordatch, I., Mobbs, D., & Leibo, J. Z. (2023). Melting Pot 2.0 (arXiv:2211.13746). arXiv. https://yitong-hu.metattri.com/melting-pot-contest-2023
 
 [^MeltingPotResearch2023]: Hu Y. (2023). Melting Pot Research Report. https://slidev.metattri.com/
 
