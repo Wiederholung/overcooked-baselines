@@ -5,7 +5,7 @@ class: text-white
 coverDate: 2024/02/04
 coverAuthor: 胡逸同
 coverAuthorUrl: https://yitong-hu.metattri.com
-coverBackgroundUrl: https://lsky.metattri.com/i/2024/01/19/65aa2a5e7ddab.gif
+coverBackgroundUrl: https://s3-pic.metattri.com/2024/01/19/65aa2a5e7ddab.gif
 coverBackgroundSource: Overcooked-AI
 coverBackgroundSourceUrl: https://github.com/HumanCompatibleAI/overcooked_ai
 download: https://wiederholung.github.io/pub/slide/zero_shot_coordination_in_overcooked_ai-export.pdf
@@ -76,12 +76,12 @@ class: "text-center"
 - 5 种不同的布局，各有不同的地形和物体分布
 - 可交互物体 = [洋葱，盘子，锅，台面，上菜区]，环境会无限生成洋葱和盘子
 
-![layout](https://lsky.metattri.com/i/2024/01/19/65aa2a5e7ddab.gif)
+![layout](https://s3-pic.metattri.com/2024/01/19/65aa2a5e7ddab.gif)
 
 ---
 layout: figure-side
 figureCaption: Human (Green Hat) v.s. AI (Blue Hat) in Coordination Ring
-figureUrl: https://lsky.metattri.com/i/2024/01/24/65b0ca8512b73.gif
+figureUrl: https://s3-pic.metattri.com/2024/01/24/65b0ca8512b73.gif
 ---
 
 **Agents**：
@@ -100,7 +100,7 @@ figureUrl: https://lsky.metattri.com/i/2024/01/24/65b0ca8512b73.gif
 
 **布局**：
 
-![layout](https://lsky.metattri.com/i/2024/01/19/65aa2a5e7ddab.gif)
+![layout](https://s3-pic.metattri.com/2024/01/19/65aa2a5e7ddab.gif)
 
 不同的布局要求不同的协作策略，从左到右，分别是：
 
@@ -213,7 +213,7 @@ class: "text-center"
 
 ---
 layout: figure
-figureUrl: https://lsky.metattri.com/i/2024/01/22/65ad7022db181.png
+figureUrl: https://s3-pic.metattri.com/2024/01/22/65ad7022db181.png
 ---
 
 ### Evaluation
@@ -222,7 +222,7 @@ figureUrl: https://lsky.metattri.com/i/2024/01/22/65ad7022db181.png
 
 ---
 layout: figure
-figureUrl: https://lsky.metattri.com/i/2024/01/22/65ad6faa1e503.png
+figureUrl: https://s3-pic.metattri.com/2024/01/22/65ad6faa1e503.png
 ---
 
 #### AI-Human Play
@@ -249,7 +249,7 @@ figureUrl: https://lsky.metattri.com/i/2024/01/22/65ad6faa1e503.png
 
 ---
 layout: figure-side
-figureUrl: https://lsky.metattri.com/i/2024/01/22/65ad7277e4d7d.png
+figureUrl: https://s3-pic.metattri.com/2024/01/22/65ad7277e4d7d.png
 ---
 
 ### Method
@@ -272,7 +272,7 @@ figureUrl: https://lsky.metattri.com/i/2024/01/22/65ad7277e4d7d.png
 - SP agent（as skillfull partner）
 - 随机初始化的策略 agent（as low-skill partner）
 
-![image-20240122230242572](https://lsky.metattri.com/i/2024/01/22/65ae839583503.png)
+![image-20240122230242572](https://s3-pic.metattri.com/2024/01/22/65ae839583503.png)
 
 ---
 
@@ -283,7 +283,7 @@ figureUrl: https://lsky.metattri.com/i/2024/01/22/65ad7277e4d7d.png
 - FCP$_{+A}$: 相比于 FCP，agents 结构不同，用于测试不同的结构会不会带来更好的多样性。
 - FCP$_{-T,+A}$: 相比于 FCP$_{+A}$，不使用过去 checkpoints，用于测试不同结构能否替代过程中生成的 checkpoints。
 
-![image-20240122231418688](https://lsky.metattri.com/i/2024/01/22/65ae864c85547.png)
+![image-20240122231418688](https://s3-pic.metattri.com/2024/01/22/65ae864c85547.png)
 
 ---
 
@@ -369,7 +369,7 @@ $$
 2. 然后优化该 agent 的策略
 3. 重复步骤 1 - 2，直到 $J(\bar{\pi})$ 收敛。
 
-![image-20240122172348406](https://lsky.metattri.com/i/2024/01/22/65ae342bd4d9e.png)
+![image-20240122172348406](https://s3-pic.metattri.com/2024/01/22/65ae342bd4d9e.png)
 
 > $r(s_t, a_t)$ 的获取是由采得的 agent 以及他的 copy 作为 partner 得到的，相当于 SP
 
@@ -389,7 +389,7 @@ $$
 
 ---
 layout: figure
-figureUrl: https://lsky.metattri.com/i/2024/01/22/65ae7af17a694.png
+figureUrl: https://s3-pic.metattri.com/2024/01/22/65ae7af17a694.png
 ---
 
 ### Evaluation
@@ -411,9 +411,9 @@ TBD
 Policy Ensemble Context-Aware zero-shot human-AI coordinatioN
 
 <!-- ### Method -->
-<!-- ---layout: figurefigureUrl: https://lsky.metattri.com/i/2024/01/22/65ad721756cbf.png--- -->
+<!-- ---layout: figurefigureUrl: https://s3-pic.metattri.com/2024/01/22/65ad721756cbf.png--- -->
 
-![image-20240122033547773](https://lsky.metattri.com/i/2024/01/22/65ad721756cbf.png)
+![image-20240122033547773](https://s3-pic.metattri.com/2024/01/22/65ad721756cbf.png)
 
 [^louPECANLeveragingPolicy2023]: Lou, X., Guo, J., Zhang, J., Wang, J., Huang, K., & Du, Y. (2023). PECAN: Leveraging Policy Ensemble for Context-Aware Zero-Shot Human-AI Coordination. Proceedings of the 2023 International Conference on Autonomous Agents and Multiagent Systems, 679–688.
 
@@ -423,7 +423,7 @@ Policy Ensemble Context-Aware zero-shot human-AI coordinatioN
 
 ### Method
 
-![image-20240123004328668](https://lsky.metattri.com/i/2024/01/23/65ae9b324dde7.png)
+![image-20240123004328668](https://s3-pic.metattri.com/2024/01/23/65ae9b324dde7.png)
 
 [^CooperativeOpenendedLearning2023]: Li, Y., Zhang, S., Sun, J., Du, Y., Wen, Y., Wang, X., & Pan, W. (2023). Cooperative Open-ended Learning Framework for Zero-Shot Coordination. Proceedings of the 40th International Conference on Machine Learning, 20470–20484. https://proceedings.mlr.press/v202/li23au.html
 
@@ -433,13 +433,13 @@ Policy Ensemble Context-Aware zero-shot human-AI coordinatioN
 
 #### AI-H$_{Proxy}$ Play
 
-<!-- ---layout: figurefigureUrl: https://lsky.metattri.com/i/2024/01/22/65ae8b17798cb.png--- -->
+<!-- ---layout: figurefigureUrl: https://s3-pic.metattri.com/2024/01/22/65ae8b17798cb.png--- -->
 
-![image-20240122233445010](https://lsky.metattri.com/i/2024/01/22/65ae8b17798cb.png)
+![image-20240122233445010](https://s3-pic.metattri.com/2024/01/22/65ae8b17798cb.png)
 
 ---
 layout: figure
-figureUrl: https://lsky.metattri.com/i/2024/01/22/65ae8b2899e17.png
+figureUrl: https://s3-pic.metattri.com/2024/01/22/65ae8b2899e17.png
 ---
 
 #### AI-AI Play
